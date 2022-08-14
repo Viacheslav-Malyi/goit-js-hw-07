@@ -22,8 +22,8 @@ function onPalletConteinerClick(event) {
   if (!event.target.classList.contains('gallery__image')) {
     return;
   }
-  let gallery = new SimpleLightbox('.gallery a');
-  gallery.on('shown.simplelightbox', function () {
-    gallery.defaultOptions.captionDelay = 250;
-  });
 }
+let gallery = new SimpleLightbox('.gallery a');
+gallery.on('shown.simplelightbox', function () {
+  gallery.defaultOptions.captionDelay = 250;
+});
